@@ -26,6 +26,7 @@ import gmedia.net.id.absenigmedia.Adapter.ListAdapterHistoryIjinPulangAwal;
 import gmedia.net.id.absenigmedia.Model.CustomHistoryIjinKeluarKantor;
 import gmedia.net.id.absenigmedia.Model.CustomHistoryIjinPulangAwal;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
+import gmedia.net.id.absenigmedia.utils.URL;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -285,6 +286,7 @@ public class HistoryIjin extends AppCompatActivity {
         MainActivity.isIjin = false;
         Intent intent = new Intent(HistoryIjin.this, MainActivity.class);
         startActivity(intent);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         finish();
     }
 

@@ -30,6 +30,7 @@ import java.util.Locale;
 import gmedia.net.id.absenigmedia.Adapter.ListAdapterScanLog;
 import gmedia.net.id.absenigmedia.Model.CustomScanLog;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
+import gmedia.net.id.absenigmedia.utils.URL;
 
 public class ScanLog extends Fragment {
     private Context context;

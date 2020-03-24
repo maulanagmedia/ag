@@ -1,8 +1,8 @@
-package gmedia.net.id.absenigmedia;
+package gmedia.net.id.absenigmedia.utils;
 
 import android.os.Bundle;
 
-import gmedia.net.id.absenigmedia.PDFViewerActivities;
+import gmedia.net.id.absenigmedia.R;
 
 /**
  * Created by Shin on 30/05/2017.

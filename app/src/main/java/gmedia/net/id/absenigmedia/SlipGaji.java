@@ -43,6 +43,7 @@ import gmedia.net.id.absenigmedia.Adapter.ListAdapterTunjanganSlipGaji;
 import gmedia.net.id.absenigmedia.Model.ModelPotonganSlipGaji;
 import gmedia.net.id.absenigmedia.Model.ModelTunjanganSlipGaji;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
+import gmedia.net.id.absenigmedia.utils.URL;
 
 public class SlipGaji extends Fragment {
 	private Context context;

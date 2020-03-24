@@ -1,4 +1,4 @@
-package gmedia.net.id.absenigmedia;
+package gmedia.net.id.absenigmedia.utils;
 
 /**
  * Created by Bayu on 15/01/2018.
@@ -43,4 +43,11 @@ public class URL {
 	public static String urlEditPIN = BaseUrl + "update_pin";
 	public static String urlCreatePIN = BaseUrl + "create_pin";
 	public static String urlSlipGaji = BaseUrl + "payroll";
+    public static String urlUpdateFotoProfil = BaseUrl+"update_foto_profil";
+    public static String urlKaryawan = BaseUrl+"karyawan";
+    public static String urlPenilaianKaryawan = BaseUrl+"penilaian_karyawan";
+    public static String urlTempPenilaianKaryawan = BaseUrl+"temp_penilain_karyawan";
+    public static String urlBatalPenilaianKaryawan = BaseUrl+"batal_penilain_karyawan";
+    public static String urlSavePenilaianKaryawan = BaseUrl+"save_penilaian_karyawan";
+    public static String urlHistoryPenilaian = BaseUrl+"history_penilaian";
 }

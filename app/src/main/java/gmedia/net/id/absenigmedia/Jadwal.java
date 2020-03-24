@@ -19,6 +19,7 @@ import android.widget.Toast;
 import gmedia.net.id.absenigmedia.Adapter.ListAdapterJadwal;
 import gmedia.net.id.absenigmedia.Model.CustomJadwal;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
+import gmedia.net.id.absenigmedia.utils.URL;
 
 import org.json.JSONArray;
 import org.json.JSONException;

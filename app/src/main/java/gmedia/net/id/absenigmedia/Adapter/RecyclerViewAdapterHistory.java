@@ -19,7 +19,7 @@ import android.widget.Toast;
 import gmedia.net.id.absenigmedia.EditCuti;
 import gmedia.net.id.absenigmedia.Model.CustomRecycler;
 import gmedia.net.id.absenigmedia.R;
-import gmedia.net.id.absenigmedia.URL;
+import gmedia.net.id.absenigmedia.utils.URL;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
 
 import org.json.JSONArray;

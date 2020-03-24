@@ -28,6 +28,7 @@ import java.text.NumberFormat;
 import java.util.Calendar;
 
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
+import gmedia.net.id.absenigmedia.utils.URL;
 
 public class Potongan extends Fragment {
 

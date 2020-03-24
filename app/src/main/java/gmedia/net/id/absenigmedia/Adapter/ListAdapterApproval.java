@@ -26,7 +26,7 @@ import java.util.List;
 import gmedia.net.id.absenigmedia.Approval;
 import gmedia.net.id.absenigmedia.R;
 import gmedia.net.id.absenigmedia.Model.CustomApproval;
-import gmedia.net.id.absenigmedia.URL;
+import gmedia.net.id.absenigmedia.utils.URL;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
 
 public class ListAdapterApproval extends ArrayAdapter {

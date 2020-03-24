@@ -1,14 +1,17 @@
 package gmedia.net.id.absenigmedia;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
 import android.location.LocationManager;
@@ -18,7 +21,13 @@ import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+
+import com.fxn.pix.Options;
+import com.fxn.pix.Pix;
+import com.fxn.utility.ImageQuality;
 import com.google.android.material.navigation.NavigationView;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
@@ -53,14 +62,20 @@ import com.google.android.gms.location.SettingsClient;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
+import com.squareup.picasso.Picasso;
 
 import gmedia.net.id.absenigmedia.Adapter.ListAdapter;
 import gmedia.net.id.absenigmedia.Model.CustomItem;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
+import gmedia.net.id.absenigmedia.karyawan.KaryawanFragment;
+import gmedia.net.id.absenigmedia.utils.CircleTransform;
+import gmedia.net.id.absenigmedia.utils.ImageUtils;
+import gmedia.net.id.absenigmedia.utils.URL;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class MainActivity extends RuntimePermissionsActivity
@@ -81,7 +96,11 @@ public class MainActivity extends RuntimePermissionsActivity
 	private Boolean klikToVisibleReInputPIN = true;
 	public static boolean isCuti = true;
 	public static boolean isIjin = true;
+	public static boolean isKaryawan =true;
 	public static boolean isApproval = true;
+	NavigationView navigationView;
+	private int imageRequestCode = 100;
+	private ImageUtils imageUtils = new ImageUtils();
 
 	private Fragment fragment;
 	public final Integer icon[] =
@@ -90,6 +109,7 @@ public class MainActivity extends RuntimePermissionsActivity
 					R.drawable.icon_scan_log,
 					R.drawable.approved,
 					gmedia.net.id.absenigmedia.R.drawable.jadwal,
+					R.drawable.kary,
 					gmedia.net.id.absenigmedia.R.drawable.profile,
 					gmedia.net.id.absenigmedia.R.drawable.profile,
 					gmedia.net.id.absenigmedia.R.drawable.uang_makan,
@@ -109,6 +129,7 @@ public class MainActivity extends RuntimePermissionsActivity
 					"Scan Log",
 					"Approval",
 					"Profile",
+					"Karyawan",
 					"Jadwal",
 					"Jadwal TS",
 					"Uang Makan",
@@ -135,7 +156,7 @@ public class MainActivity extends RuntimePermissionsActivity
 	public static Boolean onCuti = false;
 	public static Boolean onKeluar_kantor = false;
 	public static Boolean onPulang_awal = false;
-	private String tipe, onTipe;
+	private String tipe="", onTipe="";
 
 	private FusedLocationProviderClient mFusedLocationClient;
 	private LocationCallback mLocationCallback;
@@ -153,6 +174,8 @@ public class MainActivity extends RuntimePermissionsActivity
 	private double latitude, longitude;
 	private boolean dialogActive = false;
 	private SessionManager session;
+	ImageView imgCamera;
+	ImageView imgProfil;
 
 	//    private CustomMapView mvMap;
 //    private GoogleMap googleMap;
@@ -160,9 +183,32 @@ public class MainActivity extends RuntimePermissionsActivity
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(gmedia.net.id.absenigmedia.R.layout.activity_main);
+		setContentView(R.layout.activity_main);
 		dialogActive = false;
 		session = new SessionManager(getApplicationContext());
+
+//		navigationView = findViewById(R.id.nav_view);
+//		navigationView.setNavigationItemSelectedListener(this);
+//		View view = navigationView.getHeaderView(0);
+		imgCamera = findViewById(R.id.img_camera);
+		imgProfil = findViewById(R.id.img_profile);
+
+		imgCamera.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+				Options options = Options.init()
+						.setRequestCode(imageRequestCode)                                    //Request code for activity results
+						.setCount(1)                                                         //Number of images to restict selection count
+						.setFrontfacing(false)                                               //Front Facing camera on start
+						.setImageQuality(ImageQuality.HIGH)                                  //Image Quality
+						.setScreenOrientation(Options.SCREEN_ORIENTATION_PORTRAIT)           //Orientaion
+						.setPath("/absensigmedia/images");                                             //Custom Path For Image Storage
+
+				Pix.start(MainActivity.this, options);
+			}
+		});
+
         /*Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         if (bundle.getString("About")!=null) {
@@ -300,6 +346,14 @@ public class MainActivity extends RuntimePermissionsActivity
 						posisi = false;
 						break;
 					case 4:
+						fragment = new KaryawanFragment();
+						callFragment(fragment);
+						title.setText("Karyawan");
+						title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
+						finalDrawer.closeDrawer(GravityCompat.START);
+						posisi = false;
+						break;
+					case 5:
 						fragment = new Jadwal();
 						callFragment(fragment);
 						title.setText("Jadwal");
@@ -307,7 +361,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 5:
+					case 6:
 						fragment = new JadwalTS();
 						callFragment(fragment);
 						title.setText("Jadwal TS");
@@ -315,7 +369,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 6:
+					case 7:
 						fragment = new UangMakan();
 						callFragment(fragment);
 						title.setText("Uang Makan");
@@ -323,7 +377,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 7:
+					case 8:
 						fragment = new UangLembur();
 						callFragment(fragment);
 						title.setText("Uang Lembur");
@@ -339,7 +393,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;*/
-					case 8:
+					case 9:
 						fragment = new Potongan();
 						callFragment(fragment);
 						title.setText("Potongan Gaji");
@@ -347,7 +401,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 9:
+					case 10:
 						fragment = new Cuti();
 						callFragment(fragment);
 						title.setText("Cuti");
@@ -355,7 +409,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 10:
+					case 11:
 						fragment = new Ijin();
 						callFragment(fragment);
 						title.setText("Ijin");
@@ -363,7 +417,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 11:
+					case 12:
 						fragment = new RekapAbsensi();
 						callFragment(fragment);
 						title.setText("Rekap Absensi");
@@ -371,7 +425,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 12:
+					case 13:
 						fragment = new RekapitulasiAbsensi();
 						callFragment(fragment);
 						title.setText("Rekapitulasi Absensi");
@@ -379,7 +433,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 13:
+					case 14:
 						fragment = new About();
 						callFragment(fragment);
 						title.setText("About");
@@ -387,7 +441,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 14:
+					case 15:
 						SessionManager session = new SessionManager(getApplicationContext());
 						session.logoutUser();
 						break;
@@ -452,50 +506,8 @@ public class MainActivity extends RuntimePermissionsActivity
                 posisi = true;
             }*/
 		}
+//		initState();
 
-
-        /*android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
-        android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();*/
-        /*if (state == 1) {
-            String kondisi = String.valueOf(state);
-            state = 0;
-            fragment = new Approval();
-            fragmentTransaction.replace(gmedia.net.id.absenigmedia.R.id.mainLayout, fragment, fragment.getClass().getSimpleName())
-                    .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                    .addToBackStack(null)
-                    .commit();
-        } else {
-            fragment = new DashboardBaru();
-            fragmentTransaction.replace(gmedia.net.id.absenigmedia.R.id.mainLayout, fragment, fragment.getClass().getSimpleName())
-                    .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                    .addToBackStack(null)
-                    .commit();
-        }*/
-
-        /*if (savedInstanceState != null) {
-            if (savedInstanceState.getString("approval").equals("isi")) {
-                fragment = new Approval();
-                callFragment(fragment);
-                title.setText("Approval");
-                title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
-                drawer.closeDrawer(GravityCompat.START);
-                posisi = false;
-            }
-        } else {
-            fragment = new DashboardBaru();
-            callFragment(fragment);
-            title.setText("Dashboard");
-            title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
-            drawer.closeDrawer(GravityCompat.START);
-            posisi = true;
-        }*/
-        /*mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-        mSettingsClient = LocationServices.getSettingsClient(this);
-        mRequestingLocationUpdates = false;
-
-        createLocationCallback();
-        createLocationRequest();
-        buildLocationSettingsRequest();*/
 	}
 
 
@@ -530,72 +542,8 @@ public class MainActivity extends RuntimePermissionsActivity
 		}
 	}
 
-    /*private void createLocationCallback() {
-        mLocationCallback = new LocationCallback() {
-            @Override
-            public void onLocationResult(LocationResult locationResult) {
-                super.onLocationResult(locationResult);
+	private void initState(){
 
-                mCurrentLocation = locationResult.getLastLocation();
-                //mLastUpdateTime = DateFormat.getTimeInstance().format(new Date());
-                onLocationChanged(mCurrentLocation);
-            }
-        };
-    }
-
-    private void createLocationRequest() {
-
-        mLocationRequest = new LocationRequest();
-        mLocationRequest.setInterval(UPDATE_INTERVAL_IN_MILLISECONDS);
-        mLocationRequest.setFastestInterval(FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS);
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-    }
-
-    private void buildLocationSettingsRequest() {
-        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder();
-        builder.addLocationRequest(mLocationRequest);
-        mLocationSettingsRequest = builder.build();
-    }
-
-    public void onLocationChanged(Location location) {
-        if (refreshMode) {
-            refreshMode = false;
-            this.location = location;
-            this.latitude = location.getLatitude();
-            this.longitude = location.getLongitude();
-
-//            setPointMap();
-        }
-    }*/
-
-    /*@Override
-    protected void onStart() {
-        super.onStart();
-        if (state == 1) {
-            state = 0;
-            fragment = new Approval();
-            callFragment(fragment);
-            title.setText("Approval");
-            title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
-            drawer.closeDrawer(GravityCompat.START);
-            posisi = false;
-        } else if (state == 0) {
-            fragment = new DashboardBaru();
-            callFragment(fragment);
-            title.setText("Dashboard");
-            title.setTypeface(Typeface.createFromAsset(this.getAssets(), "fonts/Helvetica-Bold.otf"));
-            prepareBiodataDrawer();
-//            checkVersion();
-            FirebaseApp.initializeApp(MainActivity.this);
-        }
-
-
-    }*/
-
-	@Override
-	protected void onResume() {
-		super.onResume();
-		FirebaseApp.initializeApp(MainActivity.this);
 		if (!isCuti) {
 			fragment = new Cuti();
 			callFragment(fragment);
@@ -610,6 +558,13 @@ public class MainActivity extends RuntimePermissionsActivity
 			title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
 			drawer.closeDrawer(GravityCompat.START);
 			isIjin = true;
+		}else if(!isKaryawan){
+			fragment = new KaryawanFragment();
+			callFragment(fragment);
+			title.setText("Karyawan");
+			title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
+			drawer.closeDrawer(GravityCompat.START);
+			isKaryawan = true;
 		} else if (changelog) {
 			changelog = false;
 			fragment = new About();
@@ -652,63 +607,22 @@ public class MainActivity extends RuntimePermissionsActivity
 				drawer.closeDrawer(GravityCompat.START);
 				posisi = false;
 			}
-		}/* else if (!isApproval) {
-            isApproval = true;
-            if (tipe.equals("cuti")) {
-                cuti = true;
-//                pulang_awal = false;
-//                keluar_kantor = false;
-//                isApproval = false;
-                fragment = new Approval();
-                callFragment(fragment);
-                title.setText("Approval");
-                title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
-                drawer.closeDrawer(GravityCompat.START);
-                posisi = false;
-            } else if (tipe.equals("pulang_awal")) {
-                pulang_awal = true;
-//                cuti = false;
-//                keluar_kantor = false;
-//                isApproval = false;
-                fragment = new Approval();
-                callFragment(fragment);
-                title.setText("Approval");
-                title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
-                drawer.closeDrawer(GravityCompat.START);
-                posisi = false;
-            } else if (tipe.equals("keluar_kantor")) {
-                keluar_kantor = true;
-//                cuti = false;
-//                pulang_awal = false;
-//                isApproval = false;
-                fragment = new Approval();
-                callFragment(fragment);
-                title.setText("Approval");
-                title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
-                drawer.closeDrawer(GravityCompat.START);
-                posisi = false;
-            } else {
-                fragment = new Approval();
-                callFragment(fragment);
-                title.setText("Approval");
-                title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
-                drawer.closeDrawer(GravityCompat.START);
-                posisi = false;
-            }
-
-        }*/ else {
+		}else {
 			fragment = new DashboardBaru();
 			callFragment(fragment);
 			title.setText("Dashboard");
 			title.setTypeface(Typeface.createFromAsset(this.getAssets(), "fonts/Helvetica-Bold.otf"));
 		}
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		FirebaseApp.initializeApp(MainActivity.this);
+		initState();
 		prepareBiodataDrawer();
 		checkVersion();
 
-        /*Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-
-        }*/
 		if (android.os.Build.VERSION.SDK_INT > 25) {
 			statusCheck();
 		}
@@ -1091,10 +1005,18 @@ public class MainActivity extends RuntimePermissionsActivity
 					String message = object.getJSONObject("metadata").getString("message");
 					if (status.equals("1")) {
 						JSONObject biodata = object.getJSONObject("response");
+						Log.d(">>>>>", String.valueOf(biodata));
 						TextView nama = findViewById(gmedia.net.id.absenigmedia.R.id.namaDrawer);
 						nama.setText(biodata.getString("nama"));
 						TextView nip = findViewById(gmedia.net.id.absenigmedia.R.id.nikDrawer);
 						nip.setText(biodata.getString("nip"));
+						String img_profil = biodata.getString("foto_profil");
+						if(img_profil != null && !img_profil.equals("")){
+							Picasso.get()
+									.load(img_profil)
+									.transform(new CircleTransform())
+									.into(imgProfil);
+						}
 					} else {
 						Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
 					}
@@ -1107,6 +1029,70 @@ public class MainActivity extends RuntimePermissionsActivity
 			public void onError(String result) {
 				dialog.dismiss();
 				Toast.makeText(getApplicationContext(), "Terjadi Kesalahan", Toast.LENGTH_LONG).show();
+			}
+		});
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+//		Toast.makeText(this, requestCode, Toast.LENGTH_SHORT).show();
+		Log.d(">>>>>", String.valueOf(requestCode));
+		if (resultCode == Activity.RESULT_OK && requestCode == imageRequestCode) {
+			ArrayList<String> returnValue = data.getStringArrayListExtra(Pix.IMAGE_RESULTS);
+
+			if (returnValue.size() > 0) {
+
+				File f = new File(returnValue.get(0));
+				Bitmap b = new BitmapDrawable(MainActivity.this.getResources(), f.getAbsolutePath()).getBitmap();
+				imageUtils.LoadCircleRealImage((ImageUtils.getImageUri(MainActivity.this, b)).toString(), imgProfil);
+
+				saveFotoProfil(ImageUtils.convert(b));
+			}
+		}else if (resultCode == Activity.RESULT_OK && requestCode == 4) {
+			tipe ="karyawan";
+			fragment = new KaryawanFragment();
+			callFragment(fragment);
+			title.setText("Karyawan");
+			title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
+			posisi = false;
+		}
+	}
+
+	private void saveFotoProfil(final String foto) {
+
+		JSONObject jBody = new JSONObject();
+		try {
+			jBody.put("foto_profil", foto);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+
+		new ApiVolley(this, jBody, "POST", URL.urlUpdateFotoProfil, "", "", 0, new ApiVolley.VolleyCallback() {
+			@Override
+			public void onSuccess(String result) {
+
+				try {
+
+					JSONObject response = new JSONObject(result);
+					Log.d(">>>>",result);
+					int status = response.getJSONObject("metadata").getInt("status");
+					String message = response.getJSONObject("metadata").getString("message");
+
+					Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
+					if(status == 1){
+						prepareBiodataDrawer();
+						Toast.makeText(MainActivity.this, "Update foto profil berhasil", Toast.LENGTH_SHORT).show();
+					}
+				} catch (JSONException e) {
+					e.printStackTrace();
+					Toast.makeText(MainActivity.this, "Terjadi kesalahan saat mengambil data",Toast.LENGTH_SHORT).show();
+				}
+			}
+
+			@Override
+			public void onError(String result) {
+				Toast.makeText(MainActivity.this, "Terjadi kesalahan saat mengambil data",Toast.LENGTH_SHORT).show();
 			}
 		});
 	}

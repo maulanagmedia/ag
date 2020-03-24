@@ -23,6 +23,7 @@ import java.util.List;
 import gmedia.net.id.absenigmedia.Adapter.ListAdapterChangeLog;
 import gmedia.net.id.absenigmedia.Model.CustomChangeLog;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
+import gmedia.net.id.absenigmedia.utils.URL;
 
 public class ChangeLog extends AppCompatActivity {
     private LinearLayout btnback;

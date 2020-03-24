@@ -9,6 +9,9 @@
         <item name="android:popupMenuStyle">@style/PopupMenu</item>
         <item name="popupMenuStyle">@style/PopupMenu</item>
         <item name="android:itemTextAppearance">@style/itemTextStyle.AppTheme</item>
+        <item name="colorControlNormal">#000</item>
+
+        <item name="colorControlActivated">#000</item>
     </style>
 
     <style name="AppTheme2" parent="android:Theme.Material">
@@ -61,5 +64,4 @@
         <item name="android:datePickerMode">calendar</item>
         <item name="android:minDate">01/01/2000</item>
     </style>
-
 </resources>

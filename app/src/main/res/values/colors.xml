@@ -12,4 +12,7 @@
     <color name="textDrawer">#669cd3</color>
     <color name="textbiasa">#000000</color>
     <color name="Libur">#FF0000</color>
+    <color name="colorWhite2">#ffffff</color>
+    <color name="colorGrey">#173A3535</color>
+    <color name="colorGreyTransparant">#68FFFFFF</color>
 </resources>

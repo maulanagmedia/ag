@@ -37,6 +37,10 @@ import java.net.URLConnection;
 import java.util.Calendar;
 import java.util.Date;
 
+import gmedia.net.id.absenigmedia.utils.PDFReader;
+import gmedia.net.id.absenigmedia.utils.PDFViewerActivities;
+import gmedia.net.id.absenigmedia.utils.URL;
+
 public class JadwalTS extends Fragment {
 	private Spinner menuBulan, menuTahun;
 	//    private EditText menuTahun;

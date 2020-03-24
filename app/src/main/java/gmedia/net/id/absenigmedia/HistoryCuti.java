@@ -4,7 +4,7 @@ import android.content.Intent;
 import androidx.fragment.app.Fragment;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import androidx.appcompat.widget.*;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
@@ -19,6 +19,7 @@ import gmedia.net.id.absenigmedia.Adapter.RecyclerViewAdapterHistory;
 import gmedia.net.id.absenigmedia.Model.CustomHistory;
 import gmedia.net.id.absenigmedia.Model.CustomRecycler;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
+import gmedia.net.id.absenigmedia.utils.URL;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -256,6 +257,7 @@ public class HistoryCuti extends AppCompatActivity {
         MainActivity.isCuti = false;
         Intent intent = new Intent(HistoryCuti.this, MainActivity.class);
         startActivity(intent);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         finish();
     }
     /* private ArrayList<CustomHistory> prepareDataHistory() {

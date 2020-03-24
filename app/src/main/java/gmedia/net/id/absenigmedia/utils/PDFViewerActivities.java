@@ -1,4 +1,4 @@
-package gmedia.net.id.absenigmedia;
+package gmedia.net.id.absenigmedia.utils;
 
 /**
  * Created by Shin on 30/05/2017.

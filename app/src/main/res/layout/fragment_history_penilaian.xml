@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".penilaian.HistoryPenilaianFragment"
+    android:orientation="vertical"
+    android:background="@drawable/baground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="#ecf7fd"
+        android:id="@+id/ll_penilaian"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_edittext"
+                android:id="@+id/tv_startdate"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="2019-20-20"
+                android:layout_marginRight="8dp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_edittext"
+                android:id="@+id/tv_enddate"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="8dp"
+                android:textSize="16dp"
+                android:text="2019-20-20"
+                android:textColor="#000"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="#CE0E3B76"
+                android:id="@+id/btn_search"
+                android:textColor="#fff"
+                android:layout_weight="1.4"
+                android:text="Search"
+                android:textSize="13dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rv_history_penilaian"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0E3B76"
+                android:id="@+id/btn_penilaian"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Tambah Penilaian"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
