@@ -68,6 +68,7 @@ import gmedia.net.id.absenigmedia.Adapter.ListAdapter;
 import gmedia.net.id.absenigmedia.Model.CustomItem;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
 import gmedia.net.id.absenigmedia.karyawan.KaryawanFragment;
+import gmedia.net.id.absenigmedia.penilaian.HistoryPenilaianFragment;
 import gmedia.net.id.absenigmedia.utils.CircleTransform;
 import gmedia.net.id.absenigmedia.utils.ImageUtils;
 import gmedia.net.id.absenigmedia.utils.URL;
@@ -105,43 +106,45 @@ public class MainActivity extends RuntimePermissionsActivity
 	private Fragment fragment;
 	public final Integer icon[] =
 			{
-					gmedia.net.id.absenigmedia.R.drawable.home,
-					R.drawable.icon_scan_log,
-					R.drawable.approved,
-					gmedia.net.id.absenigmedia.R.drawable.jadwal,
-					R.drawable.kary,
-					gmedia.net.id.absenigmedia.R.drawable.profile,
-					gmedia.net.id.absenigmedia.R.drawable.profile,
-					gmedia.net.id.absenigmedia.R.drawable.uang_makan,
-					gmedia.net.id.absenigmedia.R.drawable.uanglembur,
+					gmedia.net.id.absenigmedia.R.drawable.home, // 0
+					R.drawable.icon_scan_log, // 1
+					R.drawable.approved, // 2
+					gmedia.net.id.absenigmedia.R.drawable.jadwal, // 3
+					R.drawable.kary, // 4
+					gmedia.net.id.absenigmedia.R.drawable.profile, // 5
+					gmedia.net.id.absenigmedia.R.drawable.profile, // 6
+					R.drawable.kary, // 7
+					gmedia.net.id.absenigmedia.R.drawable.uang_makan, // 8
+					gmedia.net.id.absenigmedia.R.drawable.uanglembur, // 9
 					//R.drawable.icon_slip_gaji,
-					gmedia.net.id.absenigmedia.R.drawable.potongan,
-					gmedia.net.id.absenigmedia.R.drawable.pengajuan_cuti,
-					gmedia.net.id.absenigmedia.R.drawable.ijin,
-					gmedia.net.id.absenigmedia.R.drawable.rekab,
-					gmedia.net.id.absenigmedia.R.drawable.rekab,
-					R.drawable.about,
-					gmedia.net.id.absenigmedia.R.drawable.logout
+					gmedia.net.id.absenigmedia.R.drawable.potongan, // 10
+					gmedia.net.id.absenigmedia.R.drawable.pengajuan_cuti, // 11
+					gmedia.net.id.absenigmedia.R.drawable.ijin, // 12
+					gmedia.net.id.absenigmedia.R.drawable.rekab, // 13
+					gmedia.net.id.absenigmedia.R.drawable.rekab, // 14
+					R.drawable.about, // 15
+					gmedia.net.id.absenigmedia.R.drawable.logout // 16
 			};
 	public final String textIcon[] =
 			{
-					"Dashboard",
-					"Scan Log",
-					"Approval",
-					"Profile",
-					"Karyawan",
-					"Jadwal",
-					"Jadwal TS",
-					"Uang Makan",
-					"Uang Lembur",
+					"Dashboard", // 0
+					"Scan Log", // 1
+					"Approval", // 2
+					"Profile", // 3
+					"Karyawan", // 4
+					"Jadwal", // 5
+					"Jadwal TS", // 6
+					"Penilaian 360", // 7
+					"Uang Makan", // 8
+					"Uang Lembur", // 9
 					//"Slip Gaji",
-					"Potongan Gaji",
-					"Cuti",
-					"Ijin",
-					"Rekap Absensi",
-					"Rekapitulasi Absensi",
-					"About",
-					"Logout"
+					"Potongan Gaji", // 10
+					"Cuti", // 11
+					"Ijin", // 12
+					"Rekap Absensi", // 13
+					"Rekapitulasi Absensi", // 14
+					"About", // 15
+					"Logout" // 16
 			};
 	private boolean doubleBackToExitPressedOnce = false;
 	private WifiManager manager;
@@ -370,6 +373,14 @@ public class MainActivity extends RuntimePermissionsActivity
 						posisi = false;
 						break;
 					case 7:
+						fragment = new HistoryPenilaianFragment();
+						callFragment(fragment);
+						title.setText("Penilaian 360");
+						title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
+						finalDrawer.closeDrawer(GravityCompat.START);
+						posisi = false;
+						break;
+					case 8:
 						fragment = new UangMakan();
 						callFragment(fragment);
 						title.setText("Uang Makan");
@@ -377,7 +388,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 8:
+					case 9:
 						fragment = new UangLembur();
 						callFragment(fragment);
 						title.setText("Uang Lembur");
@@ -393,7 +404,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;*/
-					case 9:
+					case 10:
 						fragment = new Potongan();
 						callFragment(fragment);
 						title.setText("Potongan Gaji");
@@ -401,7 +412,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 10:
+					case 11:
 						fragment = new Cuti();
 						callFragment(fragment);
 						title.setText("Cuti");
@@ -409,7 +420,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 11:
+					case 12:
 						fragment = new Ijin();
 						callFragment(fragment);
 						title.setText("Ijin");
@@ -417,7 +428,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 12:
+					case 13:
 						fragment = new RekapAbsensi();
 						callFragment(fragment);
 						title.setText("Rekap Absensi");
@@ -425,7 +436,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 13:
+					case 14:
 						fragment = new RekapitulasiAbsensi();
 						callFragment(fragment);
 						title.setText("Rekapitulasi Absensi");
@@ -433,7 +444,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 14:
+					case 15:
 						fragment = new About();
 						callFragment(fragment);
 						title.setText("About");
@@ -441,7 +452,7 @@ public class MainActivity extends RuntimePermissionsActivity
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
 						break;
-					case 15:
+					case 16:
 						SessionManager session = new SessionManager(getApplicationContext());
 						session.logoutUser();
 						break;
