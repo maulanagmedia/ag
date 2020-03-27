@@ -162,55 +162,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Cuti.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="68" column="64" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="64" />
+            <state relative-caret-position="-738">
+              <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
               <folding>
-                <element signature="e#2709#2892#0" expanded="true" />
-                <element signature="e#2891#2892#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1948#1949#0" expanded="true" />
+                <element signature="e#1980#1981#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianActivity.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Cuti.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+            <state relative-caret-position="98">
+              <caret line="276" column="24" selection-start-line="276" selection-start-column="24" selection-end-line="276" selection-end-column="24" />
               <folding>
-                <element signature="e#3687#3836#0" expanded="true" />
-                <element signature="e#3835#3836#0" expanded="true" />
-                <element signature="e#4015#4169#0" expanded="true" />
-                <element signature="e#4168#4169#0" expanded="true" />
-                <element signature="e#6094#7742#0" expanded="true" />
-                <element signature="e#6900#7109#0" expanded="true" />
-                <element signature="e#7108#7109#0" expanded="true" />
-                <element signature="e#7161#7381#0" expanded="true" />
-                <element signature="e#7380#7381#0" expanded="true" />
-                <element signature="e#7433#7653#0" expanded="true" />
-                <element signature="e#7652#7653#0" expanded="true" />
-                <element signature="e#7741#7742#0" expanded="true" />
-                <element signature="e#7782#9142#0" expanded="true" />
-                <element signature="e#8419#8609#0" expanded="true" />
-                <element signature="e#8608#8609#0" expanded="true" />
-                <element signature="e#8657#8847#0" expanded="true" />
-                <element signature="e#8846#8847#0" expanded="true" />
-                <element signature="e#8895#9085#0" expanded="true" />
-                <element signature="e#9084#9085#0" expanded="true" />
-                <element signature="e#9141#9142#0" expanded="true" />
-                <marker date="1585282263474" expanded="true" signature="24991:26442" ph="..." />
+                <element signature="e#2709#2892#0" expanded="true" />
+                <element signature="e#2891#2892#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -294,9 +267,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&gt;&gt;&gt;</find>
-      <find>tempKaryawanModel</find>
-      <find>tempPenilaianAdapter</find>
       <find>setupListTempKaryawan</find>
       <find>setupListKaryawan</find>
       <find>tempKar</find>
@@ -324,6 +294,9 @@
       <find>datef</find>
       <find>datefo</find>
       <find>onresum</find>
+      <find>h</find>
+      <find>getwindow</find>
+      <find>getwindowt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -577,7 +550,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22617124" />
@@ -589,11 +561,11 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.5810219" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.4983845" visible="true" weight="0.3620438" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4983845" weight="0.3620438" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.43941605" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.329927" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5016155" side_tool="true" weight="0.5007299" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.329927" />
@@ -636,9 +608,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/kary.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/PDFViewerActivities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-55">
@@ -1049,21 +1018,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Cuti.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/HideKeyboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="68" column="64" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="64" />
-          <folding>
-            <element signature="e#2709#2892#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="172">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+        <state relative-caret-position="-738">
+          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1948#1949#0" expanded="true" />
+            <element signature="e#1980#1981#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Cuti.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="276" column="24" selection-start-line="276" selection-start-column="24" selection-end-line="276" selection-end-column="24" />
+          <folding>
+            <element signature="e#2709#2892#0" expanded="true" />
+            <element signature="e#2891#2892#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
