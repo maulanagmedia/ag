@@ -7,7 +7,7 @@
     tools:context=".penilaian.temp.TempPenilaianActivity"
     android:background="@drawable/baground">
     <RelativeLayout
-        android:id="@+id/drawer_button"
+        android:id="@+id/back"
         android:layout_width="?attr/actionBarSize"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginLeft="5dp"
@@ -25,7 +25,7 @@
         android:layout_height="?attr/actionBarSize"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
-        android:layout_toRightOf="@+id/drawer_button"
+        android:layout_toRightOf="@+id/back"
         android:textAlignment="gravity">
 
         <TextView
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="Detail Penilain 360"
+            android:text="Detail Penilaian 360"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -62,18 +62,48 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <androidx.recyclerview.widget.RecyclerView
+                        <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/rv_temp_karyawan"/>
+                            android:id="@+id/rl_temp_karyawan">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_150sdp"
+                                android:id="@+id/rv_temp_karyawan"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:id="@+id/ll_not_found">
+                                <ImageView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="@dimen/_80sdp"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/img_not_found"
+                                    android:src="@drawable/not_found"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="#000"
+                                    android:text="Anda belum menilai satu pun karyawan"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+<!--                        <androidx.recyclerview.widget.RecyclerView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/rv_temp_karyawan"/>-->
+
                         <Button
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/rv_temp_karyawan"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_below="@+id/rl_temp_karyawan"
                             android:text="Tambah"
+                            android:textColor="#fff"
                             android:layout_marginTop="@dimen/margin_tiny"
                             android:layout_alignParentRight="true"
-                            android:background="@color/colorGreyTransparant"
+                            android:background="@drawable/mbunderke_tombolcheckout_dashboard"
                             android:id="@+id/btn_tambah_penilaian"/>
                     </RelativeLayout>
 
@@ -111,7 +141,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Alasan"
+                            android:text="Alasan Kompeten"
                             android:textColor="#000"
                             android:textSize="12sp" />
                         <EditText
@@ -121,8 +151,9 @@
                             android:padding="4dp"
                             android:inputType="textMultiLine"
                             android:id="@+id/edt_alasan_kompeten"
-                            android:background="#4BFFFFFF"
-                            android:textSize="17dp"/>
+                            android:background="#C8FFFFFF"
+                            android:textColor="#000"
+                            android:textSize="13dp"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -167,10 +198,11 @@
                             android:layout_height="75dp"
                             android:gravity="top"
                             android:padding="4dp"
-                            android:background="#4BFFFFFF"
                             android:id="@+id/edt_alasan_tidak_kompeten"
                             android:inputType="textMultiLine"
-                            android:textSize="17dp"/>
+                            android:background="#C8FFFFFF"
+                            android:textColor="#000"
+                            android:textSize="13dp"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -189,10 +221,11 @@
                             android:layout_height="75dp"
                             android:gravity="top"
                             android:padding="4dp"
-                            android:background="#4BFFFFFF"
                             android:id="@+id/edt_suka"
                             android:inputType="textMultiLine"
-                            android:textSize="17dp"/>
+                            android:background="#C8FFFFFF"
+                            android:textColor="#000"
+                            android:textSize="13dp"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -211,10 +244,11 @@
                             android:layout_height="75dp"
                             android:gravity="top"
                             android:padding="4dp"
-                            android:background="#4BFFFFFF"
                             android:id="@+id/edt_duka"
                             android:inputType="textMultiLine"
-                            android:textSize="17dp"/>
+                            android:background="#C8FFFFFF"
+                            android:textColor="#000"
+                            android:textSize="13dp"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -227,6 +261,7 @@
             android:layout_alignParentBottom="true"
             android:paddingLeft="12dp"
             android:paddingRight="12dp"
+            android:background="#fff"
             android:paddingTop="6dp"
             android:paddingBottom="6dp"
             android:orientation="horizontal">

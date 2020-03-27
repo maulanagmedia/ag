@@ -17,10 +17,13 @@ import gmedia.net.id.absenigmedia.penilaian.HistoryPenilaianAdapter;
 public class TempPenilaianAdapter extends RecyclerView.Adapter<TempPenilaianAdapter.ViewHolder> {
     Context context;
     List<TempKaryawanModel> model;
+    // type temp/dialog
+    String type ="";
 
-    public TempPenilaianAdapter(Context context, List<TempKaryawanModel> model){
+    public TempPenilaianAdapter(Context context, List<TempKaryawanModel> model, String type){
         this.context = context;
         this.model = model;
+        this.type = type;
     }
 
     @NonNull
@@ -34,6 +37,14 @@ public class TempPenilaianAdapter extends RecyclerView.Adapter<TempPenilaianAdap
     public void onBindViewHolder(@NonNull TempPenilaianAdapter.ViewHolder holder, int position) {
         TempKaryawanModel karyawanModel = model.get(position);
         holder.tvNama.setText(karyawanModel.getNama());
+        if(type.equals("dialog")){
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
+        }
     }
 
     @Override

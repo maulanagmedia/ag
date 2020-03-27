@@ -2,6 +2,7 @@ package gmedia.net.id.absenigmedia.penilaian;
 
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -28,6 +29,7 @@ import java.util.List;
 
 import gmedia.net.id.absenigmedia.R;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
+import gmedia.net.id.absenigmedia.penilaian.temp.TempPenilaianActivity;
 import gmedia.net.id.absenigmedia.utils.URL;
 
 /**
@@ -38,13 +40,14 @@ public class HistoryPenilaianFragment extends Fragment {
     View view;
     TextView tvStartDate, tvEndDate;
     String start_date="",end_date="";
-    int start =0, count=20;
+    int start =0, count=10;
     Button btnSearch, btnTambahPenilaian;
     RecyclerView rvHistoryPenilaian;
     List<HistoryPenilaianModel> historyPenilaianModel = new ArrayList<>();
     HistoryPenilaianAdapter adapter;
     private Calendar calendar;
     private int mYear, mMonth, mDay;
+    LinearLayoutManager layoutManager;
 
     public HistoryPenilaianFragment() {
         // Required empty public constructor
@@ -56,6 +59,8 @@ public class HistoryPenilaianFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_history_penilaian, container, false);
+        start =0;
+        count =10;
         initUi();
         return view;
     }
@@ -64,10 +69,10 @@ public class HistoryPenilaianFragment extends Fragment {
         calendar = Calendar.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String date = dateFormat.format(calendar.getTime());
-        start_date= date;
-        end_date= date;
+//        start_date= date;
+//        end_date= date;
         tvStartDate = view.findViewById(R.id.tv_startdate);
-        tvStartDate.setText(start_date);
+        tvStartDate.setText(date);
         tvStartDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,7 +105,7 @@ public class HistoryPenilaianFragment extends Fragment {
             }
         });
         tvEndDate = view.findViewById(R.id.tv_enddate);
-        tvEndDate.setText(end_date);
+        tvEndDate.setText(date);
         tvEndDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -138,11 +143,11 @@ public class HistoryPenilaianFragment extends Fragment {
         btnSearch = view.findViewById(R.id.btn_search);
         btnTambahPenilaian = view.findViewById(R.id.btn_penilaian);
         rvHistoryPenilaian = view.findViewById(R.id.rv_history_penilaian);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
+        layoutManager = new LinearLayoutManager(getContext());
         rvHistoryPenilaian.setLayoutManager(layoutManager);
+        prepareDataHistoryPenilaian("");
         setupListHistoryPenilaian();
         setupListScrollListenerHistoryPenilaian();
-        prepareDataHistoryPenilaian("");
     }
 
     @Override
@@ -155,6 +160,14 @@ public class HistoryPenilaianFragment extends Fragment {
                 count =10;
                 adapter.notifyDataSetChanged();
                 prepareDataHistoryPenilaian("search");
+            }
+        });
+
+        btnTambahPenilaian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), TempPenilaianActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -171,6 +184,7 @@ public class HistoryPenilaianFragment extends Fragment {
         }catch (Exception e){
             e.printStackTrace();
         }
+        Log.d(">>>>>",String.valueOf(params));
 
         new ApiVolley(getContext(), params, "POST", URL.urlHistoryPenilaian, "", "", 0, new ApiVolley.VolleyCallback() {
             @Override
@@ -206,7 +220,6 @@ public class HistoryPenilaianFragment extends Fragment {
             @Override
             public void onError(String result) {
                 Log.d(">>>>>", result);
-                Toast.makeText(getContext(), result, Toast.LENGTH_LONG).show();
                 Toast.makeText(getContext(), "Terjadi kesalahan", Toast.LENGTH_SHORT).show();
             }
         });
@@ -222,12 +235,9 @@ public class HistoryPenilaianFragment extends Fragment {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
-
-                LinearLayoutManager layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-
-                if (! recyclerView.canScrollVertically(1)) {
+                if (! recyclerView.canScrollVertically(1)){
                     start += count;
-                    prepareDataHistoryPenilaian("");
+                    prepareDataHistoryPenilaian("scroll");
                 }
             }
         });

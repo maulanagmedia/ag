@@ -13,6 +13,11 @@ public class KaryawanModel {
         this.foto_profil = foto_profil;
     }
 
+    public KaryawanModel(String nip, String nama){
+        this.nip = nip;
+        this.nama =nama;
+    }
+
     public String getNip() {
         return nip;
     }

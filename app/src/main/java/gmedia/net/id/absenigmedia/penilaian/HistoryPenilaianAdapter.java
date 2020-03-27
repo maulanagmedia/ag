@@ -12,7 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import gmedia.net.id.absenigmedia.MainActivity;
 import gmedia.net.id.absenigmedia.R;
@@ -37,6 +41,15 @@ public class HistoryPenilaianAdapter extends RecyclerView.Adapter<HistoryPenilai
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         HistoryPenilaianModel item = penilaianModels.get(position);
+//        SimpleDateFormat dateFormat = new SimpleDateFormat("d L yyyy", Locale.getDefault());
+//        try {
+//            Date dateHistory = dateFormat.parse(item.getTanggal());
+//            String date = dateFormat.format(dateHistory);
+//            holder.tvTanggal.setText(date);
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+
         holder.tvTanggal.setText(item.getTanggal());
         holder.tvTotal.setText(item.getTotal()+" karyawan yang dinilai");
     }

@@ -23,11 +23,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:windowSoftInputMode="adjustPan">
-        <activity android:name=".penilaian.PenilaianActivity"></activity>
-        <activity android:name=".penilaian.temp.TempPenilaianActivity" />
+        <activity android:name=".penilaian.PenilaianActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" ></activity>
+        <activity android:name=".penilaian.temp.TempPenilaianActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"  />
         <activity
             android:name=".karyawan.DetailKaryawanActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"

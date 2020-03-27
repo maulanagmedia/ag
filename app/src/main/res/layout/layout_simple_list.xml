@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:ellipsize="marquee"
+    android:textColor="#000"
+    android:background="#fff"
+    android:singleLine="true" />
+<!--<TextView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:textSize="@dimen/_12sdp"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:text="wkwk"-->
+<!--    android:gravity="left"-->
+<!--    android:textColor="#000"-->
+<!--    android:paddingTop="@dimen/_1sdp"-->
+<!--    android:paddingBottom="@dimen/_1sdp"-->
+<!--    android:paddingRight="@dimen/_3sdp"-->
+<!--    android:paddingLeft="@dimen/_3sdp"-->
+<!--    />-->

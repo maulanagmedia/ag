@@ -98,6 +98,7 @@ public class MainActivity extends RuntimePermissionsActivity
 	public static boolean isCuti = true;
 	public static boolean isIjin = true;
 	public static boolean isKaryawan =true;
+	public static boolean isPenilaian = true;
 	public static boolean isApproval = true;
 	NavigationView navigationView;
 	private int imageRequestCode = 100;
@@ -113,7 +114,7 @@ public class MainActivity extends RuntimePermissionsActivity
 					R.drawable.kary, // 4
 					gmedia.net.id.absenigmedia.R.drawable.profile, // 5
 					gmedia.net.id.absenigmedia.R.drawable.profile, // 6
-					R.drawable.kary, // 7
+					R.drawable.penilaian_ten, // 7
 					gmedia.net.id.absenigmedia.R.drawable.uang_makan, // 8
 					gmedia.net.id.absenigmedia.R.drawable.uanglembur, // 9
 					//R.drawable.icon_slip_gaji,
@@ -375,7 +376,7 @@ public class MainActivity extends RuntimePermissionsActivity
 					case 7:
 						fragment = new HistoryPenilaianFragment();
 						callFragment(fragment);
-						title.setText("Penilaian 360");
+						title.setText("History Penilaian 360");
 						title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
 						finalDrawer.closeDrawer(GravityCompat.START);
 						posisi = false;
@@ -576,6 +577,13 @@ public class MainActivity extends RuntimePermissionsActivity
 			title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
 			drawer.closeDrawer(GravityCompat.START);
 			isKaryawan = true;
+		}else if(!isPenilaian){
+			fragment = new HistoryPenilaianFragment();
+			callFragment(fragment);
+			title.setText("History Penilaian 360");
+			title.setTypeface(Typeface.createFromAsset(MainActivity.this.getAssets(), "fonts/Helvetica-Bold.otf"));
+			drawer.closeDrawer(GravityCompat.START);
+			isPenilaian = true;
 		} else if (changelog) {
 			changelog = false;
 			fragment = new About();

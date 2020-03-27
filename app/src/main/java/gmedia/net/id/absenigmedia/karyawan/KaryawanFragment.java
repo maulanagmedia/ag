@@ -1,6 +1,7 @@
 package gmedia.net.id.absenigmedia.karyawan;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 
@@ -8,6 +9,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -44,6 +47,7 @@ public class KaryawanFragment extends Fragment {
     int start =0, count=10;
     List<KaryawanModel> karyawanModels = new ArrayList<>();
     KaryawanAdapter karyawanAdapter;
+    LinearLayoutManager linearLayoutManager;
 
     public KaryawanFragment() {
         // Required empty public constructor
@@ -55,9 +59,15 @@ public class KaryawanFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_karyawan, container, false);
+//        HideKeyboard.hideSoftKeyboard((Activity) getContext());
         initUi();
         prepareDataKaryawan(keyword);
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
     }
 
     private void initUi(){
@@ -71,8 +81,8 @@ public class KaryawanFragment extends Fragment {
         });
         edtSearch = view.findViewById(R.id.edt_search);
         rvKaryawan = view.findViewById(R.id.rv_karyawan);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
-        rvKaryawan.setLayoutManager(layoutManager);
+        linearLayoutManager = new LinearLayoutManager(getContext());
+        rvKaryawan.setLayoutManager(linearLayoutManager);
         setupListKaryawan();
         setupListScrollListenerKaryawan();
         edtSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -88,6 +98,27 @@ public class KaryawanFragment extends Fragment {
                     return true;
                 }
                 return false;
+            }
+        });
+        edtSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if(edtSearch.getText().toString().length() == 0) {
+                    keyword="";
+                    start=0;
+                    count=10;
+                    prepareDataKaryawan("");
+                }
             }
         });
     }
@@ -159,7 +190,7 @@ public class KaryawanFragment extends Fragment {
     }
 
     private void setupListKaryawan() {
-        karyawanAdapter = new KaryawanAdapter(getContext(), karyawanModels);
+        karyawanAdapter = new KaryawanAdapter(getContext(), karyawanModels,"");
         rvKaryawan.setLayoutManager(new LinearLayoutManager(getContext()));
         rvKaryawan.setAdapter(karyawanAdapter);
     }
@@ -169,8 +200,6 @@ public class KaryawanFragment extends Fragment {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
-
-                LinearLayoutManager layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
 
                 if (! recyclerView.canScrollVertically(1)) {
                     start += count;

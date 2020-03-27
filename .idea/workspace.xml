@@ -10,15 +10,116 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae7be6fb-9bd3-4922-8fa1-77d082089252" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/FormatDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_button_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_info_outline_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/not_found.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/penilaian_ten.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_simple_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/popup_batal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/popup_sure.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/DetailKaryawanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/DetailKaryawanActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/PenilaianActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/PenilaianActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempKaryawanModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempKaryawanModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_spinner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_spinner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_penilaian.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_penilaian.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_temp_penilaian.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_temp_penilaian.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_penilaian.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_penilaian.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_history_penilaian.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_history_penilaian.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_karyawan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_karyawan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_temp_karyawan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_temp_karyawan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/popup_karyawan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/popup_karyawan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/appcompat/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/cardview/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/constraintlayout/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/legacy/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/recyclerview/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/test/espresso/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/test/ext/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/crashlytics/sdk/android/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/google/android/gms/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/google/android/material/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/google/firebase/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/master-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/sdk-registry.xml/sdk-registry.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/generated/source/buildConfig/androidTest/debug/com/sothree/slidinguppanel/library/test/BuildConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/generated/source/buildConfig/release/com/sothree/slidinguppanel/library/BuildConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/aapt_friendly_merged_manifests/release/aapt/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/aapt_friendly_merged_manifests/release/aapt/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/annotation_processor_list/release/annotationProcessors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/annotations_typedef_file/debug/extractDebugAnnotations/typedefs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/annotations_typedef_file/debug/extractDebugAnnotations/typedefs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_library_classes/release/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_only_not_namespaced_r_class_jar/release/generateReleaseRFile/R.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/full_jar/release/createFullJarRelease/full.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseShaders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageReleaseAssets/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageReleaseResources/merged.dir/values/values.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageReleaseResources/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/release-mergeJniLibs/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/sothree/slidinguppanel/library/BuildConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/ScrollableViewHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/SlidingUpPanelLayout$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/SlidingUpPanelLayout$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/SlidingUpPanelLayout$DragHelperCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/SlidingUpPanelLayout$LayoutParams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/SlidingUpPanelLayout$PanelSlideListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/SlidingUpPanelLayout$PanelState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/SlidingUpPanelLayout$SimplePanelSlideListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/SlidingUpPanelLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/ViewDragHelper$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/ViewDragHelper$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/ViewDragHelper$Callback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/gmedia/sothree/slidinguppanel/ViewDragHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/library_java_res/release/res.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/library_manifest/release/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifests/debugAndroidTest/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifests/release/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/packaged-classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/packaged-classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/packaged_res/release/drawable/above_shadow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/packaged_res/release/drawable/below_shadow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/packaged_res/release/values/values.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes/release/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/symbols/release/R.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJniLibs/release/__content__.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/transforms/stripDebugSymbol/debug/__content__.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/outputs/aar/library-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/outputs/aar/library-debug.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/outputs/logs/manifest-merger-release-report.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -33,7 +134,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_28_PIE_" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="35266d067d33" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -44,19 +145,84 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+            <state relative-caret-position="210">
+              <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Cuti.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="68" column="64" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="64" />
               <folding>
-                <element signature="e#2139#3589#0" expanded="true" />
-                <element signature="e#2512#3501#0" expanded="true" />
-                <element signature="e#3500#3501#0" expanded="true" />
-                <element signature="e#3588#3589#0" expanded="true" />
-                <element signature="e#3722#5168#0" expanded="true" />
-                <element signature="e#5167#5168#0" expanded="true" />
-                <element signature="e#5763#6035#0" expanded="true" />
-                <element signature="e#6034#6035#0" expanded="true" />
+                <element signature="e#2709#2892#0" expanded="true" />
+                <element signature="e#2891#2892#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+              <folding>
+                <element signature="e#3687#3836#0" expanded="true" />
+                <element signature="e#3835#3836#0" expanded="true" />
+                <element signature="e#4015#4169#0" expanded="true" />
+                <element signature="e#4168#4169#0" expanded="true" />
+                <element signature="e#6094#7742#0" expanded="true" />
+                <element signature="e#6900#7109#0" expanded="true" />
+                <element signature="e#7108#7109#0" expanded="true" />
+                <element signature="e#7161#7381#0" expanded="true" />
+                <element signature="e#7380#7381#0" expanded="true" />
+                <element signature="e#7433#7653#0" expanded="true" />
+                <element signature="e#7652#7653#0" expanded="true" />
+                <element signature="e#7741#7742#0" expanded="true" />
+                <element signature="e#7782#9142#0" expanded="true" />
+                <element signature="e#8419#8609#0" expanded="true" />
+                <element signature="e#8608#8609#0" expanded="true" />
+                <element signature="e#8657#8847#0" expanded="true" />
+                <element signature="e#8846#8847#0" expanded="true" />
+                <element signature="e#8895#9085#0" expanded="true" />
+                <element signature="e#9084#9085#0" expanded="true" />
+                <element signature="e#9141#9142#0" expanded="true" />
+                <marker date="1585282263474" expanded="true" signature="24991:26442" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +231,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="165">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="e#272#273#0" expanded="true" />
                 <element signature="e#302#303#0" expanded="true" />
@@ -81,67 +247,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/MainActivity.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="454" column="27" selection-start-line="454" selection-start-column="27" selection-end-line="454" selection-end-column="27" />
+            <state relative-caret-position="255">
+              <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
               <folding>
-                <element signature="e#7058#7857#0" expanded="true" />
-                <element signature="e#7856#7857#0" expanded="true" />
-                <element signature="e#11004#11233#0" expanded="true" />
-                <element signature="e#11232#11233#0" expanded="true" />
-                <element signature="e#11385#12689#0" expanded="true" />
-                <element signature="e#11908#12023#0" expanded="true" />
-                <element signature="e#12022#12023#0" expanded="true" />
-                <element signature="e#12162#12312#0" expanded="true" />
-                <element signature="e#12311#12312#0" expanded="true" />
-                <element signature="e#12433#12609#0" expanded="true" />
-                <element signature="e#12608#12609#0" expanded="true" />
-                <element signature="e#12688#12689#0" expanded="true" />
-                <element signature="e#13054#18630#0" expanded="true" />
-                <element signature="e#18629#18630#0" expanded="true" />
-                <element signature="e#21666#21885#0" expanded="true" />
-                <element signature="e#21884#21885#0" expanded="true" />
-                <element signature="e#21983#22137#0" expanded="true" />
-                <element signature="e#22136#22137#0" expanded="true" />
-                <element signature="e#26507#26780#0" expanded="true" />
-                <element signature="e#26779#26780#0" expanded="true" />
-                <element signature="e#27974#28671#0" expanded="true" />
-                <element signature="e#28670#28671#0" expanded="true" />
-                <element signature="e#28711#29408#0" expanded="true" />
-                <element signature="e#29407#29408#0" expanded="true" />
-                <element signature="e#29450#30163#0" expanded="true" />
-                <element signature="e#30162#30163#0" expanded="true" />
-                <element signature="e#30288#31393#0" expanded="true" />
-                <element signature="e#31392#31393#0" expanded="true" />
-                <element signature="e#31530#31635#0" expanded="true" />
-                <element signature="e#31634#31635#0" expanded="true" />
-                <element signature="e#34058#34728#0" expanded="true" />
-                <element signature="e#34727#34728#0" expanded="true" />
-                <element signature="e#34768#35438#0" expanded="true" />
-                <element signature="e#35437#35438#0" expanded="true" />
-                <element signature="e#35480#36166#0" expanded="true" />
-                <element signature="e#36165#36166#0" expanded="true" />
-                <element signature="e#36291#37282#0" expanded="true" />
-                <element signature="e#37281#37282#0" expanded="true" />
-                <element signature="e#37419#37524#0" expanded="true" />
-                <element signature="e#37523#37524#0" expanded="true" />
-                <element signature="e#44797#44909#0" expanded="true" />
-                <element signature="e#44908#44909#0" expanded="true" />
+                <element signature="e#5909#6181#0" expanded="true" />
+                <element signature="e#6180#6181#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_history_penilaian.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="49" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="49" />
+            <state relative-caret-position="323">
+              <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/FormatDate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="47" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="47" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -149,44 +286,44 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile_vertical" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tipe</find>
-      <find>onactivi</find>
-      <find>pulang_awal</find>
-      <find>fragment</find>
-      <find>onact</find>
-      <find>o</find>
-      <find>keluar_kantor</find>
-      <find>onresum</find>
-      <find>onac</find>
+      <find>&gt;&gt;&gt;</find>
+      <find>tempKaryawanModel</find>
+      <find>tempPenilaianAdapter</find>
+      <find>setupListTempKaryawan</find>
+      <find>setupListKaryawan</find>
+      <find>tempKar</find>
+      <find>adapter</find>
+      <find>nip_kary</find>
+      <find>gan</find>
+      <find>getTE</find>
+      <find>batal</find>
+      <find>llNotFound</find>
+      <find>penilaian_karyawan</find>
+      <find>mainac</find>
+      <find>getTemp</find>
+      <find>setupListHistoryPenilaian</find>
+      <find>setupListScrollListenerHistoryPenilaian</find>
+      <find>start</find>
+      <find>prepareDataHistoryPenilaian</find>
+      <find>rvTempKaryawan</find>
+      <find>TempPenilaianAdapter</find>
       <find>toast</find>
-      <find>layoutkirimhistoryijin</find>
-      <find>kirim</find>
-      <find>edit_text_keterangan_historyijin</find>
-      <find>menuDropdownJenisIjin</find>
-      <find>dropdownMenu</find>
-      <find>posisiDropdownApproval</find>
-      <find>texttglmulaiijin</find>
-      <find>textTimePixer</find>
-      <find>textMulai</find>
-      <find>textJamMulaiKeluarKantor</find>
-      <find>textSelesai</find>
-      <find>textJamSelesaiKeluarKantor</find>
-      <find>ijin</find>
-      <find>layouthistoryijin</find>
-      <find>layoutijin</find>
-      <find>setonclick</find>
-      <find>isIjin</find>
-      <find>onresume</find>
-      <find>onback</find>
-      <find>onbac</find>
+      <find>toas</find>
+      <find>Toast</find>
+      <find>dialog</find>
+      <find>batale</find>
+      <find>savePeni</find>
+      <find>datef</find>
+      <find>datefo</find>
+      <find>onresum</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,41 +341,47 @@
         <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/URL.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_edittext.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_image.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_karyawan.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Ijin.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/HistoryIjin.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/HistoryCuti.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/DetailKaryawanActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/history_ijin.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_karyawan.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_history_penilaian.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/URL.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_karyawan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_temp_karyawan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/KaryawanModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempKaryawanModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_spinner.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_temp_penilaian.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/popup_karyawan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_popup.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/PenilaianActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_penilaian.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_penilaian.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/PDFReader.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_penilaian.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_spinner.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempKaryawanModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_simple_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_temp_karyawan.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_karyawan.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/URL.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/popup_batal.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanAdapter.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_button_2.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/DetailKaryawanActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/popup_karyawan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_history_penilaian.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_penilaian.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/popup_sure.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_temp_penilaian.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/PenilaianActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/FormatDate.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanFragment.java" />
       </list>
     </option>
   </component>
@@ -252,7 +395,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane" />
       <pane id="AndroidView">
@@ -264,18 +406,70 @@
             </path>
             <path>
               <item name="ag" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="ag" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="absenigmedia" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ag" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="absenigmedia" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="karyawan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ag" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="absenigmedia" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="penilaian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ag" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="absenigmedia" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="penilaian" type="462c0819:PsiDirectoryNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ag" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="absenigmedia" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ag" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="ag" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="ag" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -288,6 +482,7 @@
       <recent name="gmedia.net.id.absenigmedia.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-ldpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-mdpi" />
@@ -394,12 +589,12 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.5810219" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49919224" weight="0.5007299" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.4983845" visible="true" weight="0.3620438" />
       <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.43941605" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.329927" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50080776" side_tool="true" weight="0.5007299" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5016155" side_tool="true" weight="0.5007299" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.329927" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.329927" />
@@ -411,371 +606,38 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Preview" order="6" weight="0.32956383" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22617124" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.5810219" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.4983845" visible="true" weight="0.37810218" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.329927" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5016155" side_tool="true" weight="0.5007299" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.329927" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.329927" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Android WiFi ADB" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.32956383" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/data_rekap_absensi.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/approval.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="11" selection-end-line="47" selection-end-column="17" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/platforms/android-28/data/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3261" column="20" selection-start-line="3261" selection-start-column="20" selection-end-line="3261" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/menu.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_back_black_24dp.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/karyawan.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/right_arrow.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/home.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Approval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/HistoryCuti.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="258" column="96" selection-start-line="258" selection-start-column="96" selection-end-line="258" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/HistoryIjin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="284" column="36" lean-forward="true" selection-start-line="284" selection-start-column="36" selection-end-line="284" selection-end-column="36" />
-          <folding>
-            <element signature="e#5383#5532#0" expanded="true" />
-            <element signature="e#5531#5532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/DetailKaryawanActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
-          <folding>
-            <element signature="e#2540#3187#0" expanded="true" />
-            <element signature="e#3186#3187#0" expanded="true" />
-            <element signature="e#3315#3464#0" expanded="true" />
-            <element signature="e#3463#3464#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Ijin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="55" column="87" lean-forward="true" selection-start-line="55" selection-start-column="87" selection-end-line="55" selection-end-column="87" />
-          <folding>
-            <element signature="e#3378#3557#0" expanded="true" />
-            <element signature="e#3556#3557#0" expanded="true" />
-            <element signature="e#13967#14229#0" expanded="true" />
-            <element signature="e#14228#14229#0" expanded="true" />
-            <element signature="e#14265#17145#0" expanded="true" />
-            <element signature="e#17144#17145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ijin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/history_ijin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_dashboard.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_karyawan.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="31" lean-forward="true" selection-end-line="43" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1155#1156#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1251#1252#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1364#1365#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1511#1512#0" expanded="true" />
-            <element signature="e#1545#1546#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_temp_karyawan.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_history_penilaian.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1621#1622#0" expanded="true" />
-            <element signature="e#1665#1666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/KaryawanModel.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempKaryawanModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-ldpi/bg_spinner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4cc94266ddf3c28dc0bcd9839a656aa/res/values/values.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_spinner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_edittext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_karyawan.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detail_karyawan.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_popup.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_karyawan.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-          <folding>
-            <element signature="e#333#349#0" expanded="true" />
-            <element signature="e#380#396#0" expanded="true" />
-            <element signature="e#466#480#0" expanded="true" />
-            <element signature="e#806#820#0" expanded="true" />
-            <element signature="e#2006#2020#0" expanded="true" />
-            <element signature="e#2317#2332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/PenilaianActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_penilaian.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="e#2198#2213#0" expanded="true" />
-            <element signature="e#3607#3629#0" expanded="true" />
-            <element signature="e#4754#4776#0" expanded="true" />
-            <element signature="e#5889#5911#0" expanded="true" />
-            <element signature="e#7023#7045#0" expanded="true" />
-            <element signature="e#8159#8181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/kary.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_temp_penilaian.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/PDFViewerActivities.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -791,28 +653,330 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/profile.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/ListKaryawanAdapter.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_spinner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="64" column="61" lean-forward="true" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
-          <folding>
-            <element signature="e#2020#2021#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/check.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bcg_btnbiru_approval.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bcg_biru_approval.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dashboard_baru.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="328" column="80" lean-forward="true" selection-start-line="328" selection-start-column="36" selection-end-line="328" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_history_penilaian.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="49" />
+        <state relative-caret-position="153">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/widget/Spinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="521" column="16" selection-start-line="521" selection-start-column="16" selection-end-line="521" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/widget/ArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="189" column="11" selection-start-line="189" selection-start-column="11" selection-end-line="189" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Jadwal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="152" column="79" selection-start-line="152" selection-start-column="79" selection-end-line="152" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Ijin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/platforms/android-28/data/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="734" column="46" selection-start-line="734" selection-start-column="46" selection-end-line="734" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_simple_list.xml">
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempKaryawanModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_temp_karyawan.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_ganti_password.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_approval.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Approval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1146">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_batal.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <folding>
+            <element signature="e#282#298#0" expanded="true" />
+            <element signature="e#1659#1674#0" expanded="true" />
+            <element signature="e#2756#2770#0" expanded="true" />
+            <element signature="e#2981#2996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2903#2904#0" expanded="true" />
+            <element signature="e#2947#2948#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_button.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" lean-forward="true" selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_button_2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#551#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/DetailKaryawanActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_karyawan.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_karyawan.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#333#349#0" expanded="true" />
+            <element signature="e#380#396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_history_penilaian.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_penilaian.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_temp_penilaian.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="222" column="31" selection-start-line="222" selection-start-column="31" selection-end-line="222" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_sure.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="59" column="72" selection-start-line="59" selection-start-column="72" selection-end-line="59" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/PenilaianActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+          <folding>
+            <element signature="e#2495#4048#0" expanded="true" />
+            <element signature="e#3228#3441#0" expanded="true" />
+            <element signature="e#3440#3441#0" expanded="true" />
+            <element signature="e#3493#3703#0" expanded="true" />
+            <element signature="e#3702#3703#0" expanded="true" />
+            <element signature="e#3755#3965#0" expanded="true" />
+            <element signature="e#3964#3965#0" expanded="true" />
+            <element signature="e#4047#4048#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/org/json/JSONArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+          <folding>
+            <element signature="e#3687#3836#0" expanded="true" />
+            <element signature="e#3835#3836#0" expanded="true" />
+            <element signature="e#4015#4169#0" expanded="true" />
+            <element signature="e#4168#4169#0" expanded="true" />
+            <element signature="e#6094#7742#0" expanded="true" />
+            <element signature="e#6900#7109#0" expanded="true" />
+            <element signature="e#7108#7109#0" expanded="true" />
+            <element signature="e#7161#7381#0" expanded="true" />
+            <element signature="e#7380#7381#0" expanded="true" />
+            <element signature="e#7433#7653#0" expanded="true" />
+            <element signature="e#7652#7653#0" expanded="true" />
+            <element signature="e#7741#7742#0" expanded="true" />
+            <element signature="e#7782#9142#0" expanded="true" />
+            <element signature="e#8419#8609#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
+            <element signature="e#8657#8847#0" expanded="true" />
+            <element signature="e#8846#8847#0" expanded="true" />
+            <element signature="e#8895#9085#0" expanded="true" />
+            <element signature="e#9084#9085#0" expanded="true" />
+            <element signature="e#9141#9142#0" expanded="true" />
+            <marker date="1585282263474" expanded="true" signature="24991:26442" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/temp/TempPenilaianAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="e#272#273#0" expanded="true" />
             <element signature="e#302#303#0" expanded="true" />
@@ -828,72 +992,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+        <state relative-caret-position="255">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
           <folding>
-            <element signature="e#2139#3589#0" expanded="true" />
-            <element signature="e#2512#3501#0" expanded="true" />
-            <element signature="e#3500#3501#0" expanded="true" />
-            <element signature="e#3588#3589#0" expanded="true" />
-            <element signature="e#3722#5168#0" expanded="true" />
-            <element signature="e#5167#5168#0" expanded="true" />
-            <element signature="e#5763#6035#0" expanded="true" />
-            <element signature="e#6034#6035#0" expanded="true" />
+            <element signature="e#5909#6181#0" expanded="true" />
+            <element signature="e#6180#6181#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/profile.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/utils/FormatDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/java/text/ParseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/penilaian/HistoryPenilaianAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="454" column="27" selection-start-line="454" selection-start-column="27" selection-end-line="454" selection-end-column="27" />
+        <state relative-caret-position="210">
+          <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/Cuti.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="68" column="64" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="64" />
           <folding>
-            <element signature="e#7058#7857#0" expanded="true" />
-            <element signature="e#7856#7857#0" expanded="true" />
-            <element signature="e#11004#11233#0" expanded="true" />
-            <element signature="e#11232#11233#0" expanded="true" />
-            <element signature="e#11385#12689#0" expanded="true" />
-            <element signature="e#11908#12023#0" expanded="true" />
-            <element signature="e#12022#12023#0" expanded="true" />
-            <element signature="e#12162#12312#0" expanded="true" />
-            <element signature="e#12311#12312#0" expanded="true" />
-            <element signature="e#12433#12609#0" expanded="true" />
-            <element signature="e#12608#12609#0" expanded="true" />
-            <element signature="e#12688#12689#0" expanded="true" />
-            <element signature="e#13054#18630#0" expanded="true" />
-            <element signature="e#18629#18630#0" expanded="true" />
-            <element signature="e#21666#21885#0" expanded="true" />
-            <element signature="e#21884#21885#0" expanded="true" />
-            <element signature="e#21983#22137#0" expanded="true" />
-            <element signature="e#22136#22137#0" expanded="true" />
-            <element signature="e#26507#26780#0" expanded="true" />
-            <element signature="e#26779#26780#0" expanded="true" />
-            <element signature="e#27974#28671#0" expanded="true" />
-            <element signature="e#28670#28671#0" expanded="true" />
-            <element signature="e#28711#29408#0" expanded="true" />
-            <element signature="e#29407#29408#0" expanded="true" />
-            <element signature="e#29450#30163#0" expanded="true" />
-            <element signature="e#30162#30163#0" expanded="true" />
-            <element signature="e#30288#31393#0" expanded="true" />
-            <element signature="e#31392#31393#0" expanded="true" />
-            <element signature="e#31530#31635#0" expanded="true" />
-            <element signature="e#31634#31635#0" expanded="true" />
-            <element signature="e#34058#34728#0" expanded="true" />
-            <element signature="e#34727#34728#0" expanded="true" />
-            <element signature="e#34768#35438#0" expanded="true" />
-            <element signature="e#35437#35438#0" expanded="true" />
-            <element signature="e#35480#36166#0" expanded="true" />
-            <element signature="e#36165#36166#0" expanded="true" />
-            <element signature="e#36291#37282#0" expanded="true" />
-            <element signature="e#37281#37282#0" expanded="true" />
-            <element signature="e#37419#37524#0" expanded="true" />
-            <element signature="e#37523#37524#0" expanded="true" />
-            <element signature="e#44797#44909#0" expanded="true" />
-            <element signature="e#44908#44909#0" expanded="true" />
+            <element signature="e#2709#2892#0" expanded="true" />
+            <element signature="e#2891#2892#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gmedia/net/id/absenigmedia/karyawan/KaryawanFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
         </state>
       </provider>
     </entry>

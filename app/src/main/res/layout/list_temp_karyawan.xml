@@ -20,9 +20,4 @@
             android:textStyle="bold"
             android:id="@+id/tv_nama"/>
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="4dp"
-        android:background="#2F000000"/>
 </LinearLayout>
