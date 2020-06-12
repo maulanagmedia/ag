@@ -213,7 +213,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Suka"
+                            android:text="Suka di Gmedia"
                             android:textColor="#000"
                             android:textSize="12sp" />
                         <EditText
@@ -236,7 +236,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Duka"
+                            android:text="Duka di Gmedia"
                             android:textColor="#000"
                             android:textSize="12sp" />
                         <EditText

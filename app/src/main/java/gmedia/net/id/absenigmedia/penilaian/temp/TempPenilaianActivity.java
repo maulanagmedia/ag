@@ -42,6 +42,7 @@ import java.util.List;
 
 import gmedia.net.id.absenigmedia.MainActivity;
 import gmedia.net.id.absenigmedia.R;
+import gmedia.net.id.absenigmedia.SessionManager;
 import gmedia.net.id.absenigmedia.Volley.ApiVolley;
 import gmedia.net.id.absenigmedia.karyawan.DetailKaryawanActivity;
 import gmedia.net.id.absenigmedia.karyawan.KaryawanAdapter;
@@ -280,7 +281,7 @@ public class TempPenilaianActivity extends AppCompatActivity {
         try {
             params.put("id",new JSONArray(idx));
             params.put("kompeten",nip_kary_kompeten);
-            params.put("alasan_kompeten",edtAlasanKompeten);
+            params.put("alasan_kompeten",edtAlasanKompeten.getText().toString());
             params.put("tidak_kompeten",nip_kary_tidak_kompeten);
             params.put("alasan_tidak_kompeten",edtAlasanTidakKompeten.getText().toString());
             params.put("suka",edtSuka.getText().toString());
@@ -523,8 +524,10 @@ public class TempPenilaianActivity extends AppCompatActivity {
     }
 
     private void getKaryawan(){
+        SessionManager sessionManager = new SessionManager(TempPenilaianActivity.this);
         JSONObject params = new JSONObject();
         try {
+            params.put("divisi",sessionManager.getDivisi());
             params.put("keyword",keyword_karyawan);
             params.put("start",start);
             params.put("count",count);

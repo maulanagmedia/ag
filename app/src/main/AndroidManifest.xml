@@ -26,7 +26,7 @@
         <activity android:name=".penilaian.PenilaianActivity"
             android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar" ></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".penilaian.temp.TempPenilaianActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="stateHidden"

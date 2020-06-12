@@ -211,7 +211,8 @@ public class Login extends AppCompatActivity {
 						String token = object.getJSONObject("response").getString("token");
 						String nip = object.getJSONObject("response").getString("nip");
 						level = object.getJSONObject("response").getString("approval");
-						session.createLoginSession("gmedia", "gmedia@gmail.com", token, nip, level);
+						String divisi = object.getJSONObject("response").getString("divisi");
+						session.createLoginSession("gmedia", "gmedia@gmail.com", token, nip, level, divisi);
 						session.createRegional(posisiMenuRegional);
 						Intent intent = new Intent(Login.this, MainActivity.class);
 						startActivity(intent);

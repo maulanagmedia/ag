@@ -37,6 +37,7 @@ public class SessionManager {
 	// User name (make variable public to access from outside)
 	public static final String KEY_NAME = "name";
 	public static final String KEY_TOKEN = "token";
+	public static final String KEY_DIVISI = "divisi";
 	public static final String KEY_NIP = "Nip";
 	public static final String KEY_APPROVAL = "approval";
 	public static final String KEY_REGIONAL = "0";
@@ -56,7 +57,7 @@ public class SessionManager {
 	/**
 	 * Create login session
 	 */
-	public void createLoginSession(String name, String email, String token, String Nip, String approval) {
+	public void createLoginSession(String name, String email, String token, String Nip, String approval, String divisi) {
 		// Storing login value as TRUE
 		editor.putBoolean(IS_LOGIN, true);
 		// Storing name in pref
@@ -67,6 +68,7 @@ public class SessionManager {
 		editor.putString(KEY_TOKEN, token);
 		editor.putString(KEY_NIP, Nip);
 		editor.putString(KEY_APPROVAL, approval);
+		editor.putString(KEY_DIVISI, divisi);
 		// commit changes
 		editor.commit();
 	}
@@ -129,6 +131,10 @@ public class SessionManager {
 
 	public String getRegional() {
 		return pref.getString(KEY_REGIONAL, "0");
+	}
+
+	public String getDivisi() {
+		return pref.getString(KEY_DIVISI, "0");
 	}
 
 //	public String getPIN() {
