@@ -1,1 +1,1 @@
-include ':app', ':library',':android-justifiedtextview-master'
+include ':app', ':library'

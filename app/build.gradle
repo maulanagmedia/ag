@@ -5,11 +5,12 @@ android {
     compileSdkVersion 29
     defaultConfig {
         applicationId 'gmedia.net.id.absenigmedia'
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 18
         versionName "7.2.8"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -38,7 +39,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:11.4.2'
     implementation 'org.jsoup:jsoup:1.11.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-rc01'
     implementation project(':library')
     implementation files('libs/PdfViewer.jar')
     implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
@@ -51,6 +53,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
 }
 
 apply plugin: 'com.google.gms.google-services'

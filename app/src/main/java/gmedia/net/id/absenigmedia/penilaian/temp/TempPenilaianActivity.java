@@ -527,7 +527,7 @@ public class TempPenilaianActivity extends AppCompatActivity {
         SessionManager sessionManager = new SessionManager(TempPenilaianActivity.this);
         JSONObject params = new JSONObject();
         try {
-            params.put("divisi",sessionManager.getDivisi());
+            params.put("nip",sessionManager.getNip());
             params.put("keyword",keyword_karyawan);
             params.put("start",start);
             params.put("count",count);

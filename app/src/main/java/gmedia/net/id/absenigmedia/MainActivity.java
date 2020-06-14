@@ -490,7 +490,7 @@ public class MainActivity extends RuntimePermissionsActivity
 		FirebaseApp.initializeApp(MainActivity.this);
 		FirebaseMessaging.getInstance().subscribeToTopic("gmedia_news");
 		String token = FirebaseInstanceId.getInstance().getToken();
-		Log.d("token", token);
+//		Log.d("token", token);
 		Bundle bundle = getIntent().getExtras();
 		if (bundle != null) {
 			Log.d("bundle11", bundle.getString("jenis", ""));

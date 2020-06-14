@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ag.iml" filepath="$PROJECT_DIR$/ag.iml" group="ag" />
-      <module fileurl="file://$PROJECT_DIR$/android-justifiedtextview-master/ag-android-justifiedtextview-master.iml" filepath="$PROJECT_DIR$/android-justifiedtextview-master/ag-android-justifiedtextview-master.iml" group="ag/android-justifiedtextview-master" />
       <module fileurl="file://$PROJECT_DIR$/android-justifiedtextview-master/android-justifiedtextview-master.iml" filepath="$PROJECT_DIR$/android-justifiedtextview-master/android-justifiedtextview-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ag/app" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" group="ag/library" />
