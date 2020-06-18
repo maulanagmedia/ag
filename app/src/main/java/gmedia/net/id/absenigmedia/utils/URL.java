@@ -45,6 +45,7 @@ public class URL {
 	public static String urlSlipGaji = BaseUrl + "payroll";
     public static String urlUpdateFotoProfil = BaseUrl+"update_foto_profil";
     public static String urlKaryawan = BaseUrl+"karyawan";
+    public static String urlAllKaryawan = BaseUrl+"all_karyawan";
     public static String urlPenilaianKaryawan = BaseUrl+"penilaian_karyawan";
     public static String urlTempPenilaianKaryawan = BaseUrl+"temp_penilain_karyawan";
     public static String urlBatalPenilaianKaryawan = BaseUrl+"batal_penilain_karyawan";

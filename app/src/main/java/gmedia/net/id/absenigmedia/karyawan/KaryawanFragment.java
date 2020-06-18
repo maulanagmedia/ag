@@ -137,7 +137,7 @@ public class KaryawanFragment extends Fragment {
             e.printStackTrace();
         }
 
-        new ApiVolley(getContext(), jBody, "POST", URL.urlKaryawan, "", "", 0, new ApiVolley.VolleyCallback() {
+        new ApiVolley(getContext(), jBody, "POST", URL.urlAllKaryawan, "", "", 0, new ApiVolley.VolleyCallback() {
             @Override
             public void onSuccess(String result) {
 

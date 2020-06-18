@@ -534,6 +534,7 @@ public class TempPenilaianActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        Log.d("TempPenilaianActivity",String.valueOf(params));
         new ApiVolley(TempPenilaianActivity.this, params, "POST", URL.urlKaryawan, "", "", 0, new ApiVolley.VolleyCallback() {
             @Override
             public void onSuccess(String result) {
@@ -561,7 +562,7 @@ public class TempPenilaianActivity extends AppCompatActivity {
 
             @Override
             public void onError(String result) {
-                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
             }
         });
     }

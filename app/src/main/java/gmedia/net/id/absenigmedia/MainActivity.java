@@ -1056,7 +1056,7 @@ public class MainActivity extends RuntimePermissionsActivity
 	protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
 //		Toast.makeText(this, requestCode, Toast.LENGTH_SHORT).show();
-		Log.d(">>>>>", String.valueOf(requestCode));
+//		Log.d(">>>>>", String.valueOf(requestCode));
 		if (resultCode == Activity.RESULT_OK && requestCode == imageRequestCode) {
 			ArrayList<String> returnValue = data.getStringArrayListExtra(Pix.IMAGE_RESULTS);
 
