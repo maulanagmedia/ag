@@ -7,7 +7,7 @@ android {
         applicationId 'gmedia.net.id.absenigmedia'
         minSdkVersion 16
         targetSdkVersion 29
-        versionCode 21
+        versionCode 22
         versionName "7.3.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
