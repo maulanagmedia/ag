@@ -40,7 +40,7 @@
                     android:layout_alignParentRight="true"
                     android:src="@drawable/ic_camera"
                     android:scaleType="fitCenter"
-                    android:background="@drawable/bg_button"/>
+                    android:background="@mipmap/ic_add_photo"/>
             </RelativeLayout>
 
         </RelativeLayout>

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "com.sothree.slidinguppanel.library",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 17,
+        "versionName": "3.4.0",
+        "outputFile": "library-release.aar",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "../../library_manifest/release/AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.sothree.slidinguppanel.library",
+        "split": ""
+      }
+    }
+  ]
+}
